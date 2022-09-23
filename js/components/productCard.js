@@ -28,7 +28,12 @@ export default function productCard(resource) {
   image.classList.add("card-img-top");
   title.classList.add("card-title");
   price.classList.add("card-text");
-  bottomLine.classList.add("d-flex", "flex-row", "justify-content-evenly");
+  bottomLine.classList.add(
+    "d-flex",
+    "flex-row",
+    "align-items-center",
+    "justify-content-evenly"
+  );
   link.classList.add("btn", "btn-secondary");
   cardBody.classList.add("card-body");
   edit.classList.add("edit-btn");
@@ -49,14 +54,13 @@ export default function productCard(resource) {
   edit.href = `/edit.html?id=${resource.id}`;
   edit.innerText = "Edit";
 
-  card.append(image);
-  card.append(cardBody);
   cardBody.append(title);
   cardBody.append(bottomLine);
   bottomLine.append(price);
   bottomLine.append(link);
   bottomLine.append(cart);
-
+  card.append(image);
+  card.append(cardBody);
   if (username) {
     cardBody.append(edit);
   }
