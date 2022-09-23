@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/style.css">
+    <title></title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light"></nav>
+    </header>
+    <main>
+      <h1></h1>
+      <button class="btn mb-3" id="logout">Log out</button>
+        <p>
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              Add new product
+            </button>
+          </p>
+          <div class="collapse collapse-vertical" id="collapseWidthExample">
+            <div class="display-message"></div>
+          <form>
+            <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Title</span>
+                <input type="text" class="form-control" aria-label="title input" aria-describedby="inputGroup-sizing-default" id="title">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text" id="inputGroup-sizing-default">Price</span>
+                <input type="text" class="form-control" aria-label="price input" aria-describedby="inputGroup-sizing-default" id="price">
+              </div>
+              <div class="input-group mb-3">
+                <input type="file" class="form-control" id="uploadImage">
+              </div>
+              <div class="input-group mb-3">
+                <span class="input-group-text">Description</span>
+                <textarea class="form-control" aria-label="With textarea" id="description"></textarea>
+              </div>
+              <div class="input-group mb-3">
+                <label class="input-group-text" for="inputGroupSelect01">Featured</label>
+                <select class="form-select" id="featuredToggle">
+                  <option selected>No</option>
+                  <option value="1">Yes</option>
+                  
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary mb-3">Add product</button>
+        </form>
+    </div>
+    </main>
+      
+    <script src="node_modules\bootstrap\dist\js\bootstrap.bundle.min.js"></script>
+    <script src="js/user.js" type="module"></script>
+</body>
+</html>
