@@ -1,3 +1,5 @@
+import cartHandle from "../utils/cartHandle.js";
+
 export default function createCartItems(resource) {
   const cartCard = document.createElement("div");
   const cartBody = document.createElement("div");
@@ -10,7 +12,7 @@ export default function createCartItems(resource) {
   const image = document.createElement("img");
   const link = document.createElement("a");
   const divTrash = document.createElement("div");
-  const trash = document.createElement("a");
+  const trash = document.createElement("i");
 
   cartCard.classList.add("card", "rounded-3", "mb-4");
   cartBody.classList.add("card-body", "p-4");
@@ -28,6 +30,9 @@ export default function createCartItems(resource) {
   divTrash.classList.add("col-md-1", "col-lg-1", "col-xl-1", "text-end");
   link.classList.add("col-md-3", "col-lg-2", "col-xl-2", "offset-lg-1");
   priceDiv.classList.add("col-md-3", "col-lg-2", "col-xl-2", "offset-lg-1");
+
+  trash.dataset.id = resource.id;
+  trash.addEventListener("click", cartHandle);
 
   divImage.append(image);
 

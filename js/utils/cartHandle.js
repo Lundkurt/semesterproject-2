@@ -1,3 +1,4 @@
+import createCartList from "../components/createCartList.js";
 import { getCart, saveCart } from "../utils/storage.js";
 import cartCounter from "./cartCounter.js";
 
@@ -36,4 +37,8 @@ export default function cartHandle() {
   }
 
   cartCounter();
+
+  if (pathname === "/cart.html") {
+    createCartList();
+  }
 }
