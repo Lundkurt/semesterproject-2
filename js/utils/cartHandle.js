@@ -1,4 +1,5 @@
 import { getCart, saveCart } from "../utils/storage.js";
+import cartCounter from "./cartCounter.js";
 
 const { pathname } = document.location;
 
@@ -34,7 +35,5 @@ export default function cartHandle() {
     saveCart(newFavs);
   }
 
-  //   if (pathname === "/favs.html") {
-  //     createFavList();
-  //   }
+  cartCounter();
 }

@@ -1,3 +1,4 @@
+import cartCounter from "../utils/cartCounter.js";
 import { getUsername } from "../utils/storage.js";
 
 export default function createHeader() {
@@ -30,7 +31,10 @@ export default function createHeader() {
         
       </ul>
       <a href="/cart.html"><i class="fa fa-shopping-cart"></i></a>
+      <div class="cart-counter"></div>
       ${profileBtn}
     </div>
   </div>`;
+
+  cartCounter();
 }
