@@ -33,7 +33,7 @@ function formValidate(event) {
     formState.passwordInput.isValid = true;
   }
 
-  const userValue = username.value;
+  const userValue = username.value.toLowerCase();
   const passValue = password.value;
 
   if (!formState.usernameInput.isValid || !formState.passwordInput.isValid) {
