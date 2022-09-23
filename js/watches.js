@@ -15,6 +15,7 @@ const productContainer = document.querySelector(".product-container");
     const appendList = data.map(productCard);
     productContainer.append(...appendList);
     filterProducts(data);
+    console.log(data);
   } catch (error) {
     console.warn(error);
   }

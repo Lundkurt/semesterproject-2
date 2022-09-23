@@ -11,7 +11,6 @@ async function fetchHero() {
   try {
     const response = await fetch(baseUrl + "home");
     const hero = await response.json();
-    console.log(hero.hero_banner.url);
     heroImg.style.backgroundImage = `url("${hero.hero_banner.url}")`;
   } catch (error) {
     console.warn(error);

@@ -69,6 +69,8 @@ function editFormSubmit(event) {
   const priceValue = parseFloat(price.value.trim());
   const descriptionValue = description.value.trim();
   const featuredValue = featured.value;
+  console.log(featured);
+  console.log(featured.value);
 
   console.log(priceValue);
 
@@ -93,11 +95,12 @@ function editFormSubmit(event) {
 async function updateProduct(id, title, price, description, featured, image) {
   const formData = new FormData();
 
-  console.log(featured);
-  if (parseFloat(featured.value) === 1) {
-    return true;
+  if (parseFloat(featured) === 1) {
+    featured = true;
+  } else if (featured === "No") {
+    featured = false;
   }
-
+  console.log(featured);
   const url = baseUrl + "products/" + id;
 
   const data = JSON.stringify({
@@ -110,7 +113,7 @@ async function updateProduct(id, title, price, description, featured, image) {
 
   console.log(image);
 
-  if (image.files.length < 0) {
+  if (image.files.length > 0) {
     formData.append("files.image", image);
   }
   formData.append("data", data);
