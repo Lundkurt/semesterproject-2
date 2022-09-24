@@ -8,7 +8,7 @@ export default function createHeader() {
 
   const userName = getUsername();
 
-  let profileBtn = `<a class="btn" href="/login.html">Log in</a>`;
+  let profileBtn = `<a class="btn btn-user" href="/login.html">Log in</a>`;
 
   if (userName) {
     profileBtn = `<a class="btn btn-user ${
