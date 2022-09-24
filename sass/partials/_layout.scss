@@ -4,6 +4,11 @@ body {
   display: flex;
   flex-direction: column;
   font-family: "Cabin";
+  background-image: radial-gradient(#fefefe 2px, transparent 2px),
+    radial-gradient(#fefefe 2px, transparent 2px);
+  background-size: 10px 10px;
+  background-position: 0 0, 5px 5px;
+  background-color: #dbdbdb;
 }
 
 h1,
