@@ -102,6 +102,9 @@ const logoutButton = document.querySelector("#logout");
 logoutButton.addEventListener("click", logout);
 
 function logout() {
-  clearUser();
-  location.href = "/";
+  const confirmation = confirm("Are you sure you want to exit?");
+  if (confirmation) {
+    clearUser();
+    location.href = "/";
+  }
 }
