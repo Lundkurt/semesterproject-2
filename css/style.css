@@ -1,11 +1,11 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Raleway:wght@200;400;500;700&display=swap");
 /*!
  * Bootstrap  v5.2.0 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Raleway:wght@200;400;500;700&display=swap");
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -10923,6 +10923,61 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Cabin";
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+.navbar-brand {
+  font-family: "Raleway";
+}
+
+header {
+  background-color: black;
+  color: white;
+}
+
+.nav-link {
+  color: white;
+}
+
+nav i {
+  color: white;
+}
+
+.cart-counter {
+  color: red;
+}
+
+.wrapper {
+  flex: 1 0 auto;
+  margin-bottom: 25px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  flex-shrink: 0;
+  height: 100px;
+}
+
+.container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
+  max-width: 1480px;
+}
+
 .banner {
   width: 100%;
   height: 300px;
@@ -10931,6 +10986,56 @@ textarea.form-control-lg {
   color: white;
 }
 
+.card {
+  margin: auto;
+  max-width: 90%;
+}
+
+.btn-user {
+  color: white;
+}
+
+.message {
+  margin: auto;
+  padding: 10px;
+  border: solid 1px black;
+}
+
+.error {
+  background-color: rgba(255, 0, 0, 0.219);
+  border: solid 2px red;
+  color: red;
+}
+
+.success {
+  background-color: rgba(0, 255, 0, 0.219);
+  border: solid 2px green;
+  color: green;
+}
+
+.spinner-grow {
+  margin: auto;
+}
+
+.card {
+  padding: 0;
+}
+
 .input-group {
   max-width: 90%;
+}
+
+.img-thumbnail {
+  height: 200px;
+  width: 200px;
+}
+
+.filter {
+  width: 250px !important;
+  margin: 20px auto 0 auto;
+}
+
+.cart-content {
+  margin-top: 25px;
+  margin-bottom: 40px;
 }/*# sourceMappingURL=style.css.map */

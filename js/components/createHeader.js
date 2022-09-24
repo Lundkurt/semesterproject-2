@@ -11,7 +11,9 @@ export default function createHeader() {
   let profileBtn = `<a class="btn" href="/login.html">Log in</a>`;
 
   if (userName) {
-    profileBtn = `<a class="btn" href="/user.html">Profile: ${userName}</a>`;
+    profileBtn = `<a class="btn btn-user ${
+      pathname === "user.html" ? "active" : ""
+    }" href="/user.html">Profile: ${userName}</a>`;
   }
 
   nav.innerHTML = `<div class="container-fluid">
@@ -22,10 +24,14 @@ export default function createHeader() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/index.html">Home</a>
+          <a class="nav-link ${
+            pathname === "/" || pathname === "index.html" ? "active" : ""
+          }" aria-current="page" href="/index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/watches.html">Watches</a>
+          <a class="nav-link ${
+            pathname === "watches.html" ? "active" : ""
+          }" href="/watches.html">Watches</a>
         </li>
         
         

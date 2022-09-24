@@ -19,7 +19,7 @@ export default function productCard(resource) {
   const cardBody = document.createElement("div");
   const title = document.createElement("h5");
   const bottomLine = document.createElement("div");
-  const price = document.createElement("p");
+  const price = document.createElement("h4");
   const link = document.createElement("a");
   const cart = document.createElement("i");
   const edit = document.createElement("a");
@@ -34,9 +34,9 @@ export default function productCard(resource) {
     "align-items-center",
     "justify-content-evenly"
   );
-  link.classList.add("btn", "btn-secondary");
+  link.classList.add("btn", "btn-light");
   cardBody.classList.add("card-body");
-  edit.classList.add("edit-btn");
+  edit.classList.add("edit-btn", "btn", "btn-info");
 
   cart.classList.add("fa", iconClass);
   cart.dataset.id = resource.id;
@@ -57,8 +57,9 @@ export default function productCard(resource) {
   cardBody.append(title);
   cardBody.append(bottomLine);
   bottomLine.append(price);
-  bottomLine.append(link);
   bottomLine.append(cart);
+  bottomLine.append(link);
+
   card.append(image);
   card.append(cardBody);
   if (username) {

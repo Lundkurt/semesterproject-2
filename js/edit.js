@@ -34,6 +34,7 @@ const price = document.querySelector("#price");
 const image = document.querySelector("#uploadImage");
 const description = document.querySelector("#description");
 const featured = document.querySelector("#featuredToggle");
+const h1 = document.querySelector("h1");
 
 (async function () {
   try {
@@ -50,6 +51,8 @@ const featured = document.querySelector("#featuredToggle");
     price.value = details.price;
     description.value = details.description;
     thumbnail.src = details.image.url;
+
+    h1.innerHTML = "Edit" + " " + details.title;
 
     deleteArticle(details.id);
   } catch (error) {

@@ -9,17 +9,25 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg bg-light"></nav>
+      <nav class="navbar navbar-dark navbar-expand-lg dark-bg"></nav>
     </header>
-    <main>
+    <div class="wrapper">
       <div class="hero-img banner">
-        <h1>Exclusive watches</h1>
+        <h1 class="text-uppercase">Exclusive watches</h1>
       </div>
+      <div class="text-center">
+      <h2>Featured</h2>
+    </div>
       <div class="container">
-        <div class="featured-container row row-cols-1 row-cols-sm-2 row-cols-md-4"></div>
+        <div class="featured-container gap-1 row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5">
+          <div class="spinner-grow text-primary" role="status">
+            <span class="visually-hidden">Loading...</span>
+          </div>
+        </div>
         </div>
       </div>
-    </main>
+    </div>
+    <footer></footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="js/index.js" type="module"></script>
 </body>
