@@ -28,7 +28,7 @@ export default function createCartItems(resource) {
   title.classList.add("lead", "fw-normal", "mb-2");
   trash.classList.add("fas", "fa-trash", "fa-lg");
   divTrash.classList.add("col-md-1", "col-lg-1", "col-xl-1", "text-end");
-  link.classList.add("col-md-3", "col-lg-2", "col-xl-2", "offset-lg-1");
+  link.classList.add("offset-lg-1", "btn-light", "btn");
   priceDiv.classList.add("col-md-3", "col-lg-2", "col-xl-2", "offset-lg-1");
 
   trash.dataset.id = resource.id;
@@ -55,7 +55,7 @@ export default function createCartItems(resource) {
   title.innerText = resource.title;
   price.innerText = "$" + resource.price;
   link.href = "/details.html?id=" + resource.id;
-  link.innerText = "Watch";
+  link.innerText = "View details";
   image.src = resource.image;
 
   return cartCard;

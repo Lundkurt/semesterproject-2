@@ -10978,6 +10978,25 @@ footer {
   height: 100px;
 }
 
+.footer-icons {
+  width: 90px;
+  margin: auto;
+  padding-top: 5px;
+}
+
+.container {
+  padding: 5px;
+}
+
+.footer-icons i {
+  font-size: 1.4rem;
+}
+
+.copyright {
+  text-align: center;
+  margin: 30px;
+}
+
 .active {
   color: #ffd700 !important;
 }

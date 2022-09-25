@@ -36,7 +36,7 @@ export default function productCard(resource) {
   );
   link.classList.add("btn", "btn-primary");
   cardBody.classList.add("card-body");
-  edit.classList.add("edit-btn", "btn", "btn-info");
+  edit.classList.add("edit-btn", "btn");
 
   cart.classList.add("fa", iconClass);
   cart.dataset.id = resource.id;
