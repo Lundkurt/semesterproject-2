@@ -9,7 +9,7 @@ const message = document.querySelector(".display-message");
 const token = getToken();
 
 if (!token) {
-  location.href = "/";
+  location.href = "/login.html";
 }
 
 createHeader();

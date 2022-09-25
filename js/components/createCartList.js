@@ -10,7 +10,7 @@ export default function createCartList() {
   const cart = getCart();
   cartContainer.innerHTML = "";
   if (cart.length === 0) {
-    displayMessage("", "Add some products first", ".cart-container");
+    displayMessage("", "Your cart is empty!", ".cart-container");
   }
 
   const appendlist = cart.map(createCartItems);
