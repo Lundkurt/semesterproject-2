@@ -36,7 +36,7 @@ const description = document.querySelector("#description");
 const featured = document.querySelector("#featuredToggle");
 const h1 = document.querySelector("h1");
 
-(async function () {
+async function fetchProduct() {
   try {
     const response = await fetch(productUrl);
     const details = await response.json();
@@ -58,7 +58,9 @@ const h1 = document.querySelector("h1");
   } catch (error) {
     console.warn(error);
   }
-})();
+}
+
+fetchProduct();
 
 form.addEventListener("submit", editFormSubmit);
 
@@ -132,6 +134,7 @@ async function updateProduct(id, title, price, description, featured, image) {
   try {
     const response = await fetch(url, options);
     const json = await response.json();
+    fetchProduct();
 
     if (json.created_at) {
       displayMessage("success", "Product updated", ".display-message");

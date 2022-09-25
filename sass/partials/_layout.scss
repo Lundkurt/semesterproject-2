@@ -32,6 +32,9 @@ header {
 
 nav i {
   color: white;
+  border: solid 1px white;
+  border-radius: 50%;
+  padding: 7px;
 }
 .cart-counter {
   color: red;
@@ -117,7 +120,8 @@ footer {
 }
 
 .login-container,
-.user-container {
+.user-container,
+.margin-top {
   margin-top: 25px;
   padding: 30px;
 }
