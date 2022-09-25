@@ -12,7 +12,7 @@ export default function createHeader() {
 
   if (userName) {
     profileBtn = `<a class="btn btn-user ${
-      pathname === "user.html" ? "active" : ""
+      pathname === "/user.html" ? "active" : ""
     }" href="/user.html">Profile: ${userName}</a>`;
   }
 
@@ -25,12 +25,12 @@ export default function createHeader() {
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <a class="nav-link ${
-            pathname === "/" || pathname === "index.html" ? "active" : ""
+            pathname === "/" || pathname === "/index.html" ? "active" : ""
           }" aria-current="page" href="/index.html">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link ${
-            pathname === "watches.html" ? "active" : ""
+            pathname === "/watches.html" ? "active" : ""
           }" href="/watches.html">Watches</a>
         </li>
         

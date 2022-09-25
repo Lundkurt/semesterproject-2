@@ -1,3 +1,6 @@
+$gold: #ffd700;
+$container-bg: #f5f5f5;
+
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "partials/layout";
 @import "partials/cards";
@@ -5,3 +8,4 @@
 @import "partials/edit";
 @import "partials/watches";
 @import "partials/cart";
+@import "partials/details";

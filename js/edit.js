@@ -31,7 +31,7 @@ const form = document.querySelector("form");
 const idInput = document.querySelector("#id");
 const title = document.querySelector("#title");
 const price = document.querySelector("#price");
-const image = document.querySelector("#uploadImage");
+const img = document.querySelector("#uploadImage");
 const description = document.querySelector("#description");
 const featured = document.querySelector("#featuredToggle");
 const h1 = document.querySelector("h1");
@@ -52,7 +52,7 @@ const h1 = document.querySelector("h1");
     description.value = details.description;
     thumbnail.src = details.image.url;
 
-    h1.innerHTML = "Edit" + " " + details.title;
+    h1.innerHTML = "Edit:" + " " + details.title;
 
     deleteArticle(details.id);
   } catch (error) {
@@ -72,6 +72,7 @@ function editFormSubmit(event) {
   const priceValue = parseFloat(price.value.trim());
   const descriptionValue = description.value.trim();
   const featuredValue = featured.value;
+  const image = img.files[0];
   console.log(featured);
   console.log(featured.value);
 
@@ -116,9 +117,7 @@ async function updateProduct(id, title, price, description, featured, image) {
 
   console.log(image);
 
-  if (image.files.length > 0) {
-    formData.append("files.image", image);
-  }
+  formData.append("files.image", image);
   formData.append("data", data);
   console.log(formData);
 

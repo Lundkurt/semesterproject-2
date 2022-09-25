@@ -56,8 +56,10 @@ async function postProduct(title, price, description, featured, image) {
   const formData = new FormData();
 
   console.log(featured);
-  if (parseFloat(featured.value) === 1) {
-    return true;
+  if (parseFloat(featured) === 1) {
+    featured = true;
+  } else if (featured === "No") {
+    featured = false;
   }
 
   const url = baseUrl + "products";

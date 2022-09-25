@@ -10978,6 +10978,10 @@ footer {
   height: 100px;
 }
 
+.active {
+  color: #ffd700 !important;
+}
+
 .container-fluid, .container-sm, .container-md, .container-lg, .container-xl, .container-xxl {
   max-width: 1480px;
 }
@@ -11003,6 +11007,7 @@ footer {
   margin: auto;
   padding: 10px;
   border: solid 1px black;
+  background-color: #f5f5f5;
 }
 
 .error {
@@ -11019,6 +11024,30 @@ footer {
 
 .spinner-grow {
   margin: auto;
+}
+
+.login-container,
+.user-container {
+  margin-top: 25px;
+  padding: 30px;
+}
+
+.btn-primary {
+  background-image: linear-gradient(rgba(173, 185, 221, 0.85), rgba(142, 165, 235, 0.85));
+  color: black;
+  border-color: black;
+}
+
+.btn {
+  box-shadow: 1px 2px 10px rgba(46, 46, 46, 0.247);
+}
+
+.btn:hover {
+  box-shadow: 1px 2px 10px rgba(46, 46, 46, 0.447);
+}
+
+.container {
+  background-color: #f5f5f5 !important;
 }
 
 .card {
@@ -11046,4 +11075,23 @@ footer {
 .cart-content {
   margin-top: 25px;
   margin-bottom: 40px;
+}
+
+.shopping-cart {
+  size: 2rem;
+}
+
+.back {
+  background-color: #f5f5f5;
+  margin-top: 25px;
+}
+
+.back a {
+  text-decoration: none;
+  color: black;
+}
+
+.details-container {
+  margin-top: -3px !important;
+  padding-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */

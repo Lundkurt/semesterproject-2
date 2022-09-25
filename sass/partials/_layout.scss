@@ -49,6 +49,10 @@ footer {
   height: 100px;
 }
 
+.active {
+  color: $gold !important;
+}
+
 .container-fluid {
   max-width: 1480px;
 }
@@ -74,6 +78,7 @@ footer {
   margin: auto;
   padding: 10px;
   border: solid 1px black;
+  background-color: $container-bg;
 }
 
 .error {
@@ -90,4 +95,30 @@ footer {
 
 .spinner-grow {
   margin: auto;
+}
+
+.login-container,
+.user-container {
+  margin-top: 25px;
+  padding: 30px;
+}
+
+.btn-primary {
+  background-image: linear-gradient(
+    rgba(173, 185, 221, 0.85),
+    rgba(142, 165, 235, 0.85)
+  );
+  color: black;
+  border-color: black;
+}
+
+.btn {
+  box-shadow: 1px 2px 10px rgba(46, 46, 46, 0.247);
+}
+.btn:hover {
+  box-shadow: 1px 2px 10px rgba(46, 46, 46, 0.447);
+}
+
+.container {
+  background-color: $container-bg !important;
 }

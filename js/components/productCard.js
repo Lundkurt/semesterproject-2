@@ -34,7 +34,7 @@ export default function productCard(resource) {
     "align-items-center",
     "justify-content-evenly"
   );
-  link.classList.add("btn", "btn-light");
+  link.classList.add("btn", "btn-primary");
   cardBody.classList.add("card-body");
   edit.classList.add("edit-btn", "btn", "btn-info");
 
