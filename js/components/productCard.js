@@ -43,10 +43,10 @@ export default function productCard(resource) {
   cart.dataset.title = resource.title;
   cart.dataset.price = resource.price;
   cart.dataset.description = resource.description;
-  cart.dataset.image = resource.image.url;
+  cart.dataset.image = resource.image;
   cart.addEventListener("click", cartHandle);
 
-  image.src = resource.image.url;
+  image.src = resource.image;
   title.innerText = resource.title;
   price.innerText = resource.price + "$";
   link.href = `details.html?id=${resource.id}`;

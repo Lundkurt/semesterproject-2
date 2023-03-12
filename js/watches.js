@@ -10,7 +10,7 @@ const productContainer = document.querySelector(".product-container");
 (async function fetchProducts() {
   try {
     productContainer.innerHTML = "";
-    const response = await fetch(baseUrl + "products");
+    const response = await fetch(baseUrl);
     const data = await response.json();
     const appendList = data.map(productCard);
     productContainer.append(...appendList);
