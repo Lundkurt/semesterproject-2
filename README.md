@@ -32,5 +32,7 @@ git clone git@github.com:Lundkurt/semesterproject-2
 2. Install dependencies
 
 ```bash
-npm i
+npm install
 ```
+
+3. Run with live server localhost
