@@ -11,6 +11,7 @@ A ecommerce website for selling watches
  - Watches page with list of all products and filtering
  - Ability to add new products, edit existing products or delete. 
  - Login stored in localstorage
+ - Api is currently offline, data have been replaced with fakestore API, which is not relevant to the store name
 
 
 ## Built With
