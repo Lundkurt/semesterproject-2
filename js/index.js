@@ -7,18 +7,18 @@ createHeader();
 const featuredContainer = document.querySelector(".featured-container");
 const heroImg = document.querySelector(".hero-img");
 
-// async function fetchHero() {
-//   try {
-//     featuredContainer.innerHTML = "";
-//     const response = await fetch(baseUrl + "home");
-//     const hero = await response.json();
-//     heroImg.style.backgroundImage = `url("${hero.hero_banner.url}")`;
-//   } catch (error) {
-//     console.warn(error);
-//   }
-// }
+function fetchHero() {
+  try {
+    featuredContainer.innerHTML = "";
+    // const response = await fetch(baseUrl + "home");
+    // const hero = await response.json();
+    heroImg.style.backgroundImage = `url("../images/carousel-3.jpg")`;
+  } catch (error) {
+    console.warn(error);
+  }
+}
 
-// fetchHero();
+fetchHero();
 
 async function fetchFeatured() {
   try {
